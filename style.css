@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+nav{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 0;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+
+.logo i{
+
+    font-size:34px;
+    color:#2563eb;
+
+}
+
+.logo h2{
+
+    font-size:24px;
+
+}
+
+.logo p{
+
+    font-size:15px;
+    font-weight:bold;
+
+}
+
+
+i{
+    font-size:30px;
+    color:#2563eb;
+}
+.nav-middle-elements{
+    display: flex;
+    list-style: none;
+    gap:15px;
+    
+    
+}
+nav ul li:hover{
+    background-color: lightgrey;
+}
+ul li a{
+    text-decoration: none;
+     color:#555;
+    font-size:17px;
+}
+.common-button{
+     background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 6px 28px;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: 600;
+     border:none;
+    cursor:pointer;
+}
+.common-button:hover{
+     background-color:grey;
+}
+.banner-parent{
+    height:90vh;
+     background-image:url("banner.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    position:relative;
+
+}
+.banner-child1{
+     width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.55);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+.banner-child2{
+    width:700px;
+    text-align:center;
+
+    position: relative;
+    top: -60px; }
+.banner-parent h1{
+font-size:72px;
+
+    color:white;
+
+    font-weight:800;
+
+    margin-bottom:25px;
+
+}
+.banner-child2 p
+{
+    color:#e5e5e5;
+
+    font-size:20px;
+
+    line-height:1.7;
+
+    margin-bottom:40px;
+
+}
+.banner-button{
+      background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 40px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.3s;
+    margin-top: 50px;
+
+}
+.banner-button:hover{
+     background:gray;
+
+}
+      
+  
+
