@@ -66,11 +66,13 @@ i{
 nav ul li:hover{
     background-color: lightgrey;
 }
+
 ul li a{
     text-decoration: none;
      color:#555;
     font-size:17px;
 }
+
 .common-button{
      background-color: #2563eb;
     color: white;
@@ -205,9 +207,7 @@ font-size:72px;
 
 
 }
-/* .view-speaker:hover{
-    transform: translateY(-8px);
-    box-shadow:0 10px 30px rgba(0,0,0,.15); */
+
 .view-speaker img{
      width:100%;
 
@@ -402,11 +402,77 @@ text-align:center;
     color:white;
 }
 
+/* css styles taken from AI for placeholder section  */
 
 
+.benefits-faq-section{
+  background:#eef4ff;
+  padding:80px 0;
+}
+.two-col-wrapper{
+  width:90%; max-width:1100px; margin:auto;
+  display:flex; gap:40px; flex-wrap:wrap; align-items:flex-start;
+}
+.col{ flex:1; min-width:280px; text-align:center; }
 
+.speaker-strip{ display:flex; justify-content:center; margin-bottom:16px; }
+.speaker-strip img{
+  width:44px; height:44px; border-radius:50%; object-fit:cover;
+  border:3px solid white; margin-left:-12px;
+}
+.speaker-strip img:first-child{ margin-left:0; }
 
+.faq-button{ margin-top:60px; }
 
+.reveal-toggle{ display:none; }
+.green-button{
+  display:inline-block; background:#16a34a; color:white;
+  padding:14px 32px; border-radius:8px; font-weight:700;
+  cursor:pointer; font-size:16px; transition:background .2s;
+}
+.green-button:hover{ background:#15803d; }
+
+.arrow{ display:inline-block; margin-left:6px; transition:transform .3s ease; }
+#show-adv:checked + label .arrow,
+#show-faq:checked + label .arrow{ transform:rotate(180deg); }
+
+.adv-list, .faq-list{
+  list-style:none; max-height:0; overflow:hidden;
+  transition:max-height .5s ease; margin-top:20px; padding-left:0;
+  text-align:left;
+}
+.reveal-toggle:checked ~ .adv-list,
+.reveal-toggle:checked ~ .faq-list{ max-height:1400px; }
+
+.adv-list li, .faq-list li{
+  background:white; border:1px solid #dbeafe; border-radius:8px;
+  padding:12px 16px; margin-bottom:8px; color:#333; font-size:14px;
+  opacity:0; transform:translateY(6px);
+  transition:opacity .35s ease, transform .35s ease;
+}
+.reveal-toggle:checked ~ .adv-list li,
+.reveal-toggle:checked ~ .faq-list li{ opacity:1; transform:translateY(0); }
+
+.adv-list li:nth-child(1), .faq-list li:nth-child(1){ transition-delay:.05s; }
+.adv-list li:nth-child(2), .faq-list li:nth-child(2){ transition-delay:.10s; }
+.adv-list li:nth-child(3), .faq-list li:nth-child(3){ transition-delay:.15s; }
+.adv-list li:nth-child(4), .faq-list li:nth-child(4){ transition-delay:.20s; }
+.adv-list li:nth-child(5), .faq-list li:nth-child(5){ transition-delay:.25s; }
+.adv-list li:nth-child(6), .faq-list li:nth-child(6){ transition-delay:.30s; }
+.adv-list li:nth-child(7), .faq-list li:nth-child(7){ transition-delay:.35s; }
+.adv-list li:nth-child(8){ transition-delay:.40s; }
+.adv-list li:nth-child(9){ transition-delay:.45s; }
+.adv-list li:nth-child(10){ transition-delay:.50s; }
+
+.faq-list li strong{ color:#111; }
+
+.adv-item{ display:flex; align-items:center; gap:10px; }
+.adv-avatar{ width:26px; height:26px; border-radius:50%; object-fit:cover; flex-shrink:0; }
+.num-badge{
+  width:26px; height:26px; border-radius:50%; background:#e5e7eb; color:#555;
+  display:flex; align-items:center; justify-content:center;
+  font-weight:700; font-size:11px; flex-shrink:0;
+}
 
 
 
